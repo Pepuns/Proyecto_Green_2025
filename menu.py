@@ -16,7 +16,8 @@ def opcion4():
 
 menu = 0
 
-#que nos cumplas feliz :3
+#que nos cumplas feliz :3 
+#tienes cancer andy
 
 while(menu != 5):
     print("1. opcion1")
