@@ -1,6 +1,9 @@
+import asyncio
+import Gordoctavio
+
 def opcion1():
     print("hola soy la opcion1")
-    pressbtn = input("")
+    asyncio.run(Gordoctavio.main())
 
 def opcion2():
     print("hola soy la opcion2")
@@ -17,7 +20,7 @@ def opcion4():
 menu = 0
 
 #que nos cumplas feliz :3 
-#tienes cancer andy
+#tienes
 
 while(menu != 5):
     print("1. opcion1")
