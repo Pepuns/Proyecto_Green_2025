@@ -5,7 +5,7 @@ import msvcrt
 tiempo =[0, 0, 0]
 temporizador = True
 
-async def main():
+async def main(tiempo, temporizador):
     while(temporizador == True):
         tiempo[0] += 1
         if tiempo[0] >= 60:
