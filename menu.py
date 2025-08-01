@@ -14,7 +14,7 @@ def opcion1():
 def opcion2():
     print("hola soy la opcion2")
     temporizador = True
-    alarma_fn.alarma(tiempo, temporizador)
+    alarma_fn.alarma(temporizador)
 
 def opcion3():
     CH.cambiarHora(tiempo)
