@@ -10,11 +10,11 @@ def cambiarHora(tiempo):
             print("Error, ingrese un tiempo valido")
         else:
             break
-    if tiempo[2] < 10:
-        tiempo[2] = "0" + str(tiempo[2])
-    if tiempo[1] < 10:
-        tiempo[1] = "0" + str(tiempo[1])
-    if tiempo[0] < 10:
-        tiempo[0] = "0" + str(tiempo[0])
+    #if tiempo[2] < 10:
+    #    tiempo[2] = "0" + str(tiempo[2])
+    #if tiempo[1] < 10:
+    #    tiempo[1] = "0" + str(tiempo[1])
+    #if tiempo[0] < 10:
+    #    tiempo[0] = "0" + str(tiempo[0])
     filetemporizador.write(f"{tiempo[2]} {tiempo[1]} {tiempo[0]}")
     filetemporizador.close()

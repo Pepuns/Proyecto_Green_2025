@@ -15,11 +15,8 @@ async def main(tiempo, temporizador):
             tiempo[1] = 0
             tiempo[2] += 1
         print ("segundos:", tiempo[0], "minutos:", tiempo[1]," horas:", tiempo[2])
+        print("Presiona 'q' para salir")
         await asyncio.sleep(1)
         if msvcrt.kbhit():
             if msvcrt.getch().decode('utf-8').lower() == 'q':
                 break
-
-
-
-print("puta madre")

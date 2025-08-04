@@ -6,7 +6,7 @@ tiempo = [0, 0, 0]
 #[2] horas
 #[1] minutos
 #[0] segundos
-def alarma(temporizador):
+def obtener_tiempo():
     filetemporizador = open("data/temporizador_data.txt", "r")
     contenido = filetemporizador.read()
     filetemporizador.close()
@@ -15,6 +15,7 @@ def alarma(temporizador):
     tiempo[1] = int(contenido[1])
     tiempo[0] = int(contenido[2])
 
+def alarma(temporizador, tiempo):
     while temporizador == True:
         print("segundos:", tiempo[0], "minutos:", tiempo[1], "horas:", tiempo[2])
         if tiempo[1] == 0 and tiempo[2] > 0 and tiempo[0] == 0:
@@ -30,7 +31,7 @@ def alarma(temporizador):
             #esta linea la pongo como comentario solo para trabajar más rapido
             #playsound.playsound('audio/sound.mp3')
             print("")
-
+    
 
 #import time
 

@@ -2,6 +2,8 @@ import asyncio
 from funciones import Gordoctavio
 from funciones import alarma_fn
 from funciones import CH
+import datetime
+from funciones import Calendario
 
 tiempo =[0, 0, 0]
 
@@ -10,24 +12,25 @@ def opcion1():
     tiempo =[0, 0, 0]
     print("hola soy la opcion1")
     asyncio.run(Gordoctavio.main(tiempo, temporizador))
+    Calendario.get_time(tiempo)
 
 def opcion2():
     print("hola soy la opcion2")
     temporizador = True
-    alarma_fn.alarma(temporizador)
+    alarma_fn.obtener_tiempo()
+    Calendario.get_time(tiempo)
+    alarma_fn.alarma(temporizador, tiempo)
 
 def opcion3():
     CH.cambiarHora(tiempo)
 
 def opcion4():
-    print("hola soy la opcion4")
+    print("Iniciando ")
+    Calendario.read_time()
     pressbtn = input("")
 
 
 menu = 0
-
-#que nos cumplas feliz :3 
-#tienes
 
 while(menu != 5):
     print("1. opcion1")
